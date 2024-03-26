@@ -21,6 +21,7 @@ struct AccountView: View {
                     ForEach(messageViewModel.messages) { message in
                         MessageView(message: message)
                     }
+                    VoiceView(accountRef: accountRef, messageViewModel: messageViewModel)
                 }.defaultScrollAnchor(.bottom)
                     .onAppear {
                         messageViewModel.getMessages(accountRef: accountRef)

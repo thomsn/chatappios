@@ -1,2 +1,4 @@
 firebase_functions~=0.2.0
 openai
+google-cloud-speech
+google-cloud-texttospeech
